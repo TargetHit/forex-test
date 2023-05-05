@@ -25,8 +25,8 @@
 				var widget = window.tvWidget = new TradingView.widget({
 					// debug: true, // uncomment this line to see Library errors and warnings in the console
 					fullscreen: true,
-					symbol: 'C:EURUSD',
-					interval: '1',
+					symbol: 'AAPL',
+					interval: '1D',
 					container: "tv_chart_container",
 					//	BEWARE: no trailing slash is expected in feed URL
 					//datafeed: new Datafeeds.UDFCompatibleDatafeed(datafeedUrl, undefined, {
@@ -56,7 +56,8 @@
 						watchlist: true,
 						//datawindow: true,
 						watchlist_settings: {
-							default_symbols: ["LTCBTC","ETHBTC","BNBBTC","C:EURUSD"]
+							default_symbols: ["C:EURUSD", "C:GBPUSD", "C:NZDUSD", "C:EURGBP", "C:EURJPY", "C:EURCHF"],
+
 						}
 					},
 
