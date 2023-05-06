@@ -89,7 +89,7 @@ class BinanceDatafeed {
       endTime,
       limit
     ) {
-      const url = `https://api.polygon.io/v2/aggs/ticker/${symbol}/range/${interval.multiplier}/${interval.interval}/${startTime}/${endTime}?sort=asc&limit=50000&apiKey=rgfIWHrh6t65VyG5a_EscqykpLB9EtJL`;
+      const url = `https://api.polygon.io/v2/aggs/ticker/${symbol}/range/${interval.multiplier}/${interval.interval}/${startTime}/${endTime}?sort=asc&limit=500&apiKey=rgfIWHrh6t65VyG5a_EscqykpLB9EtJL`;
       try {
         const response = await fetch(url, { headers: this.edgeHeaders });
         const json = await response.json();
